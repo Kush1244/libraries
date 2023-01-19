@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "scoped_allocator": "cpp",
+        "limits": "cpp",
+        "concepts": "cpp",
+        "coroutine": "cpp",
+        "algorithm": "cpp",
+        "unordered_map": "cpp",
+        "array": "cpp",
+        "ctime": "cpp"
+    }
+}
