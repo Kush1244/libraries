@@ -7,6 +7,9 @@
         "algorithm": "cpp",
         "unordered_map": "cpp",
         "array": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "type_traits": "cpp",
+        "initializer_list": "cpp",
+        "iostream": "cpp"
     }
 }

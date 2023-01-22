@@ -1,10 +1,9 @@
+#include "complex.hpp"
+#include <any>
 #include <iostream>
-#include "utility.hpp"
-
-#include <ctime>
-
-
-int main() {
-    auto b = my::make_pair(2, 3);
-    std::cout << b.first() << " " << b.second() << std::endl;
+int main()
+{
+	my::complex<> a(1, 2);
+	std::cout << a.real() << " " << a.img() << std::endl;
+	std::cout << a.mag() << " " << a.norm() << std::endl;
 }

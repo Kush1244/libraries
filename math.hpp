@@ -4,28 +4,33 @@
 #include <initializer_list>
 
 /* Square */
-namespace my {
-    namespace square {
-        template<typename numeric_type>
-        double square(numeric_type& num) {
-            return num * num;
-        }
-
-        template<typename numeric_type>
-        double square(std::initializer_list<numeric_type>&& sum_of_squares) {
-            double _square = 0.0;
-            for(auto i : sum_of_squares) {
-                _square += square<numeric_type>(i);
-            }
-            return _square;
-        }
-    }
-
-    namespace square_root {
-
-    }
+namespace my
+{
+namespace square
+{
+template <typename numeric_type> double square(numeric_type &num)
+{
+    return num * num;
 }
 
+template <typename numeric_type> double square(std::initializer_list<numeric_type> &&sum_of_squares)
+{
+    double _square = 0.0;
+    for (auto i : sum_of_squares)
+    {
+        _square += square<numeric_type>(i);
+    }
+    return _square;
+}
+} // namespace square
 
+namespace square_root
+{
+template <typename integralType> double sqrt(integralType T)
+{
+    return 0.0;
+}
+} // namespace square_root
+} // namespace my
 
 #endif // MATH_HPP
